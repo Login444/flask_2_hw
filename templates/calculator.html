@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+    <form action="/" method="post">
+        <input type="number" name="first_number" placeholder="enter 1st number">
+        <input type="number" name="second_number" placeholder="enter 2nd number">
+        <select name="operation_type">
+            <option value="plus">+</option>
+            <option value="minus">-</option>
+            <option value="multiple">*</option>
+            <option value="division">/</option>
+        </select>
+        <input type="submit" value="get result">
+    </form>
+{% endblock %}
